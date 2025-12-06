@@ -1,0 +1,120 @@
+.StockData {
+    &-content {
+        .filter {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin-top: 30px;
+            background: #ffffff;
+            box-shadow: 2px 4px 8px 0px rgba(34, 60, 80, 0.2);
+            padding: 20px;
+            border-radius: 20px;
+            gap: 20px;
+
+            &-name {
+                height: 100%;
+                width: 100%;
+                align-items: center;
+                justify-content: center;
+                display: flex;
+                gap: 4px;
+
+                .line {
+                    height: 20px;
+                    width: 4px;
+                    background: rgba(0, 0, 255, 0.384);
+                    border-radius: 4px;
+                }
+
+                h3 {
+                    width: 100%;
+                    font-family: FL;
+                }
+            }
+
+            .inputs {
+                width: 100%;
+                gap: 20px;
+                display: flex;
+
+                .block {
+                    width: 100%;
+                    height: 100%;
+                    border: 1px solid rgba(0, 0, 0, 0.212);
+                    border-radius: 20px;
+                    cursor: pointer;
+
+                    &:focus-within {
+                        border: 2px solid rgb(79, 79, 211);
+                    }
+
+                    input {
+                        width: 100%;
+                        height: 48px;
+                        border-radius: 20px;
+                        font-size: 18px;
+                        padding: 4px;
+                        outline: none;
+                        border: none;
+                    }
+
+                    img {
+                        margin-left: 10px;
+                        width: 20px;
+                    }
+
+                    select {
+                        display: flex;
+                        width: 100%;
+                        font-size: 18px;
+                        cursor: pointer;
+                        padding: 10px;
+                        border-radius: 20px;
+                    }
+
+
+                    &.search {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 6px;
+                    }
+                }
+            }
+        }
+
+        .stockList {
+            margin-top: 30px;
+            box-shadow: 2px 4px 8px 3px rgba(34, 60, 80, 0.2);
+            border-radius: 20px;
+            border: 20px 0 0 20px;
+
+            &-content {
+                &-name {
+                    border-radius: 20px 20px 0 0;
+                    background: rgba(255, 255, 255, 0.151);
+                    padding: 30px 0;
+                    display: flex;
+
+                    h3 {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 6px;
+                        color: var(--grey-color);
+                        cursor: pointer;
+                        img{
+                            display: none;
+                        }
+                    }
+                }
+                &-list {
+                    border-top: 1px solid rgba(0, 0, 0, 0.137);
+                    background: white;
+                    height: 400px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
